@@ -2,10 +2,13 @@
 
 Software for a drone that intercepts other drones. It flies on PX4 with a companion computer running ROS 2.
 
+The project website, with the concept of operations, requirements, subsystems and test plan, is at **[paco-interceptor.github.io](https://paco-interceptor.github.io)**.
+
 ## Repositories
 
 - **[ws_interceptor](https://github.com/PACO-Interceptor/ws_interceptor)**: ROS 2 Jazzy workspace with the guidance and control nodes (proportional navigation) and the PX4 SITL + Gazebo setup we use for testing. Apache-2.0.
 - **detector-drones**: YOLO model that detects drones from the air, meant to run on a Jetson Nano. AGPL-3.0. We're still moving it to this organization.
+- **[PACO-Interceptor.github.io](https://github.com/PACO-Interceptor/PACO-Interceptor.github.io)**: source of the project website, built with VitePress.
 
 ## Trying it out
 
