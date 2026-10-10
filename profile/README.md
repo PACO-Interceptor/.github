@@ -1,29 +1,16 @@
 # PACO Interceptor
 
-Open-source software for an autonomous drone interceptor: guidance and control on a PX4 multirotor, and an on-board vision system that detects other drones in flight.
+Software for a drone that intercepts other drones. It flies on PX4 with a companion computer running ROS 2.
 
 ## Repositories
 
-| Repository | What it does | Stack | License |
-|---|---|---|---|
-| [ws_interceptor](https://github.com/PACO-Interceptor/ws_interceptor) | ROS 2 workspace for target tracking and interception: proportional-navigation guidance, PX4 interface and Gazebo SITL simulation | ROS 2 Jazzy, PX4, C++ | Apache-2.0 |
-| detector-drones *(moving to this organization)* | Air-to-air drone detector to run on board a Jetson Nano | Python, Ultralytics YOLO, TensorRT | AGPL-3.0 |
+- **[ws_interceptor](https://github.com/PACO-Interceptor/ws_interceptor)**: ROS 2 Jazzy workspace with the guidance and control nodes (proportional navigation) and the PX4 SITL + Gazebo setup we use for testing. Apache-2.0.
+- **detector-drones**: YOLO model that detects drones from the air, meant to run on a Jetson Nano. AGPL-3.0. We're still moving it to this organization.
 
-## Getting started
+## Trying it out
 
-Clone the ROS 2 workspace and follow its README to build it and run the simulation:
+Start with the [ws_interceptor README](https://github.com/PACO-Interceptor/ws_interceptor#readme). The [wiki](https://github.com/PACO-Interceptor/ws_interceptor/wiki) explains how to build the workspace and run the simulation.
 
-```bash
-git clone https://github.com/PACO-Interceptor/ws_interceptor.git
-```
+## Getting in touch
 
-The step-by-step guide lives in the [ws_interceptor wiki](https://github.com/PACO-Interceptor/ws_interceptor/wiki).
-
-## Contributing
-
-Development is done by the project team. Issues and pull requests can only be opened by team members, but questions, ideas and advice are welcome:
-
-- Use **Discussions** in the relevant repository.
-- Comment on existing issues and pull requests.
-
-To report a security problem, please don't use a public discussion: contact the maintainers privately.
+Only team members can open issues and pull requests, but comments and Discussions are open to everyone, so feel free to leave suggestions there. If you find a security problem, please don't post the details publicly; ask for a private contact in a Discussion.
